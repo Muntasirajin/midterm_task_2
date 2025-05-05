@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivus</title>
+
+    <link rel="shortcut icon" href="desktop/logo-big.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="max-w-[90rem] mx-auto">
+
+    <header class="pt-[2rem] px-[1.25rem] lg:px-[6.25rem]">
+
+        <!-- navbar starts -->
+        <nav class="flex flex-row justify-between items-center">
+            <div class="logo animate-logo">
+                <img src="desktop/logo-big.png" alt="">
+            </div>
+
+            <!-- Burger Menu for mobile -->
+            <div class="dropdown dropdown-end min-[1250px]:hidden">
+                <div tabindex="0" role="button" class="btn m-1"><img src="desktop/Burger_menu.png" alt=""></div>
+                <ul tabindex="0"
+                    class="dropdown-content menu bg-[var(--dark)] rounded-box z-[1] w-52 p-2 shadow text-[var(--green)]">
+                    <li><a>About us</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Use Cases</a></li>
+                    <li><a>Pricing</a></li>
+                    <li><a>Blog</a></li>
+
+                </ul>
+            </div>
+            <!-- Burger menu for mobile ends -->
+
+            <!-- nav menu for large devices -->
+            <nav class="hidden min-[1250px]:flex flex-row gap-x-[2.5rem] items-center">
+                <ul class="flex flex-row gap-x-[2.5rem]">
+                    <li><a>About us</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Use Cases</a></li>
+                    <li><a>Pricing</a></li>
+                    <li><a>Blog</a></li>
+                </ul>
+                <input type="checkbox" value="lemonade" class="toggle theme-controller" />
+                <button class="btn btn-lg btn-outline text-[var(--dark)] text-[1.25rem]">Request a quote</button>
+            </nav>
+            <!-- nav menu for large devices ends -->
+        </nav>
+
+        <!-- navbar ends -->
+
+        <!-- banner-mobile starts -->
+
+        <div class="banner-mobile mt-[2.5rem] mb-[3.75rem] md:hidden">
+            <div class="banner-mobile-title">
+                <h2 class="text-black font-medium text-[2.75rem]">Navigating the digital landscape for success</h2>
+            </div>
+            <div class="banner-mobile-img mt-[0.6rem] mb-[1.25rem]">
+                <img src="desktop/cover.png" alt="">
+            </div>
+            <div class="banner-mobile-desc">
+                <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                    including SEO, PPC, social media marketing, and content creation.</p>
+                <button class="btn btn-lg bg-[var(--dark)] text-[1.25rem] text-white mt-[2.5rem]">Book a
+                    consultation</button>
+            </div>
+        </div>
+        <!-- banner-mobile ends -->
+
+        <!-- banner desktop starts -->
+
+        <div class="banner-desktop hidden md:flex flex-row items-center my-[4.25rem]">
+            <div class="banner-desc w-1/2">
+                <h2 class="text-black font-medium text-[2.75rem]">Navigating the digital landscape for success</h2>
+                <p class="my-[2.25rem] text-[1.25rem] text-black">Our digital marketing agency helps businesses grow and
+                    succeed online through a range of services
+                    including SEO, PPC, social media marketing, and content creation.</p>
+                <button
+                    class="btn btn-lg bg-[var(--dark)] text-[1.25rem] text-white mt-[2.5rem] hover:bg-white hover:text-[var(--dark)]">Book
+                    a consultation</button>
+            </div>
+            <div class="banner-img w-1/2">
+                <img src="desktop/cover.png" alt="">
+            </div>
+        </div>
+        <!-- banner desktop ends -->
+
+    </header>
+
+    <!-- sponsors mobile starts -->
+    <section class="sponsors-mobile overflow-hidden mb-[3.75rem] md:hidden">
+        <div class="group-1 flex flex-row gap-x-[2.25rem] mb-[1.25rem] scroll-left ">
+            <div class="sponsor-img">
+                <img src="desktop/amazon.png" alt="">
+            </div>
+            <div class="sponsor-img">
+                <img src="desktop/dribble.png" alt="">
+            </div>
+            <div class="sponsor-img">
+                <img src="desktop/hubspot.png" alt="">
+            </div>
+            <!-- duplicated for better animation -->
+            <div class="sponsor-img">
+                <img src="desktop/amazon.png" alt="">
+            </div>
+            <div class="sponsor-img">
+                <img src="desktop/dribble.png" alt="">
+            </div>
+            <div class="sponsor-img">
+                <img src="desktop/hubspot.png" alt="">
+            </div>
+
+
+        </div>
+        <div class="group-2 flex flex-row gap-x-[2.25rem] scroll-right">
+            <div class="netflix">
+                <img src="desktop/netflix.png" alt="">
+            </div>
+            <div class="netflix">
+                <img src="desktop/notion.png" alt="">
+            </div>
+            <div class="netflix">
+                <img src="desktop/zoom.png" alt="">
+            </div>
+
+            <!-- duplicated images for better animation -->
+            <div class="netflix">
+                <img src="desktop/netflix.png" alt="">
+            </div>
+            <div class="netflix">
+                <img src="desktop/notion.png" alt="">
+            </div>
+            <div class="netflix">
+                <img src="desktop/zoom.png" alt="">
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- sponsors mobile ends -->
+
+    <!-- sponsors desktop starts -->
+    <section class="sponsors-desktop hidden md:flex flex-row gap-x-[6rem]  md:px-[1.25rem] lg:px-[6.25rem]">
+        <div class="sponsor-img">
+            <img src="desktop/amazon.png" alt="">
+        </div>
+        <div class="sponsor-img">
+            <img src="desktop/dribble.png" alt="">
+        </div>
+        <div class="sponsor-img">
+            <img src="desktop/hubspot.png" alt="">
+        </div>
+        <div class="sponsor-img">
+            <img src="desktop/netflix.png" alt="">
+        </div>
+        <div class="sponsor-img">
+            <img src="desktop/notion.png" alt="">
+        </div>
+        <div class="sponsor-img">
+            <img src="desktop/zoom.png" alt="">
+        </div>
+    </section>
+    <!-- sponsors desktop ends -->
+
+    <!-- case study mobile section starts -->
+
+    <section class="case-study-mobile overflow-hidden px-[1.5rem] mb-[3.75rem] md:hidden">
+
+        <div class="case-study-txt mt-[3.75rem] mb-[2.5rem] flex flex-col items-center">
+            <div class="title max-w-[15rem] bg-[var(--green)] text-black text-[2.25rem] font-medium mb-[1.8rem] p-0">
+                <h2>Case Studies</h2>
+            </div>
+            <p class="text-center
+            ">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+        </div>
+        <div class="card-container flex flex-row gap-x-[1.25rem] scroll-left">
+            <!-- card-1 starts -->
+            <div class="card bg-[var(--dark)] max-w-[16rem] flex-shrink-0 rounded-[2.5rem]">
+                <div class="card-body text-white">
+                    <p>For a local restaurant, we <br>implemented a targeted PPC campaign that resulted in a 50%
+                        increase in
+                        <br> website traffic and a 25% increase in sales.
+                    </p>
+                    <div class="text-[var(--green)] flex flex-row gap-x-4 mt-[1.25rem]">Learn more
+                        <div class="">
+                            <img src="desktop/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- card-1 ends -->
+
+            <!-- card-2 starts -->
+            <div class="card max-w-[16rem] flex-shrink-0 bg-[var(--dark)] rounded-[2.5rem]">
+                <div class="card-body text-white">
+                    <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking
+                        for key keywords and a 200% increase in organic traffic.</p>
+                    <div class="text-[var(--green)] flex flex-row gap-x-4 mt-[1.25rem]">Learn more
+                        <div class="">
+                            <img src="desktop/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- card-2 ends -->
+
+            <!-- card-3 starts -->
+            <div class="card max-w-[16rem] flex-shrink-0 bg-[var(--dark)] rounded-[2.5rem]">
+                <div class="card-body text-white">
+                    <p>For a national retail chain, we created a social media marketing campaign that increased
+                        followers by 25% and generated a 20% increase in online sales.</p>
+                    <div class="text-[var(--green)] flex flex-row gap-x-4 mt-[1.25rem]">Learn more
+                        <div class="">
+                            <img src="desktop/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- card-3 ends -->
+        </div>
+
+
+    </section>
+    <!-- case study mobile section ends-->
+
+    <!-- case study desktop starts -->
+
+    <section class="case-study-desktop my-[6.25rem] hidden md:block md:px-[1.25rem] lg:px-[6.25rem]">
+
+        <div class="txt flex flex-row gap-x-[2.5rem] items-center mb-[5rem]">
+            <h2
+                class="lg:text-[2rem] md:text-[1.8rem] text-black font-medium bg-[var(--green)] w-[14rem] p-2 rounded-md">
+                Case Studies</h2>
+            <p class="text-[1.25rem] text-black">Explore Real-Life Examples of Our Proven Digital Marketing Success
+                through Our Case Studies</p>
+        </div>
+
+
+        <div
+            class="joined-cards bg-[var(--dark)] flex flex-row gap-x-[3.75rem] rounded-[3rem] px-[3.75rem] py-[4rem] md:px-[1.75rem]">
+
+            <!-- card-1 starts -->
+            <div class="card max-w-[18rem]">
+                <div class="card-body text-white ">
+                    <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in
+                        website traffic and a 25% increase in sales.</p>
+                    <div class="text-[var(--green)] flex flex-row gap-x-4 mt-[1.25rem]">Learn more
+                        <div class="">
+                            <img src="desktop/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- card-1 ends -->
+
+            <!-- card-2 starts -->
+            <div class="card max-w-[25rem]">
+                <div class="card-body border-l-2 border-r-2 border-white text-white">
+                    <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking
+                        for key keywords and a 200% increase in organic traffic.</p>
+                    <div class="text-[var(--green)] flex flex-row gap-x-4 mt-[1.25rem]">Learn more
+                        <div class="">
+                            <img src="desktop/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- card-2 ends -->
+
+            <!-- card-3 starts -->
+            <div class="card max-w-[18rem] ">
+                <div class="card-body text-white">
+                    <p>For a national retail chain, we created a social media marketing campaign that increased
+                        followers by 25% and generated a 20% increase in online sales.</p>
+                    <div class="text-[var(--green)] flex flex-row gap-x-4 mt-[1.25rem]">Learn more
+                        <div class="">
+                            <img src="desktop/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- card-3 ends -->
+
+
+        </div>
+
+    </section>
+    <!-- case study desktop ends -->
+
+
+    <section class="working-progress-mobile px-[1.25rem] lg:px-[6.25rem]">
+        <div class="case-study-txt mb-[2.5rem] flex flex-col items-center text-center">
+            <h2
+                class="lg:text-[2rem] md:text-[1.8rem] text-black font-medium bg-[var(--green)] inline-block p-2 rounded-md">
+                Our Working</h2>
+            <h2
+                class="lg:text-[2rem] md:text-[1.8rem] text-black font-medium bg-[var(--green)] inline-block p-2 rounded-md">
+                Progress</h2>
+            <p class="text-center mt-[1.8rem]">Step-by-Step Guide to Achieving Your Business Goals</p>
+        </div>
+        <!-- accordion-1 start -->
+        <div
+            class="collapse collapse-plus bg-[var(--grey)] md:bg-[var(--green)] text-black box-shadow p-[2rem] mb-[1.25rem] border-2 border-[var(--dark)] rounded-[2.8rem]">
+            <input type="radio" name="my-accordion-3" checked="checked" class="" />
+            <div class="collapse-title text-[18px] lg:text-[3.75rem] font-medium">01
+                <span class="ml-[1.5rem] lg:text-[1.8rem]">Consultation</span>
+            </div>
+            <div class="collapse-content border-t-2 border-black pt-[1.8rem]">
+                <p>During the initial consultation, we will discuss your business goals and objectives, target audience,
+                    and current marketing efforts. This will allow us to understand your needs and tailor our services
+                    to best fit your requirements.</p>
+            </div>
+        </div>
+        <!-- accordion-1 ends -->
+
+        <!-- accordion-2 start -->
+        <div
+            class="collapse collapse-plus bg-[var(--grey)] text-black box-shadow p-[2rem] mb-[1.25rem] border-2 border-[var(--dark)] rounded-[2.8rem]">
+            <input type="radio" name="my-accordion-3" checked="checked" class="" />
+            <div class="collapse-title text-[18px] lg:text-[3.75rem] font-medium">02
+                <span class="ml-[1.5rem] lg:text-[1.8rem]">Research and Strategy Development</span>
+            </div>
+            <div class="collapse-content border-t-2 border-black pt-4">
+                <p>During the initial consultation, we will discuss your business goals and objectives, target audience,
+                    and current marketing efforts. This will allow us to understand your needs and tailor our services
+                    to best fit your requirements.</p>
+            </div>
+        </div>
+        <!-- accordion-2 ends -->
+
+        <!-- accordion-3 start -->
+        <div
+            class="collapse collapse-plus bg-[var(--grey)] text-black box-shadow p-[2rem] mb-[1.25rem] border-2 border-[var(--dark)] rounded-[2.8rem]">
+            <input type="radio" name="my-accordion-3" checked="checked" class="" />
+            <div class="collapse-title text-[18px] lg:text-[3.75rem] font-medium">03
+                <span class="ml-[1.5rem] lg:text-[1.8rem]">Implementation</span>
+            </div>
+            <div class="collapse-content border-t-2 border-black pt-4">
+                <p>During the initial consultation, we will discuss your business goals and objectives, target audience,
+                    and current marketing efforts. This will allow us to understand your needs and tailor our services
+                    to best fit your requirements.</p>
+            </div>
+        </div>
+        <!-- accordion-3 ends -->
+
+        <!-- accordion-4 start -->
+        <div
+            class="collapse collapse-plus bg-[var(--grey)] text-black box-shadow p-[2rem] mb-[1.25rem] border-2 border-[var(--dark)] rounded-[2.8rem]">
+            <input type="radio" name="my-accordion-3" checked="checked" class="" />
+            <div class="collapse-title text-[18px] lg:text-[3.75rem] font-medium">04
+                <span class="ml-[1.5rem] lg:text-[1.8rem]">Monitoring and Optimization</span>
+            </div>
+            <div class="collapse-content border-t-2 border-black pt-4">
+                <p>During the initial consultation, we will discuss your business goals and objectives, target audience,
+                    and current marketing efforts. This will allow us to understand your needs and tailor our services
+                    to best fit your requirements.</p>
+            </div>
+        </div>
+        <!-- accordion-4 ends -->
+
+        <!-- accordion-5 start -->
+        <div
+            class="collapse collapse-plus bg-[var(--grey)] text-black box-shadow p-[2rem] mb-[1.25rem] border-2 border-[var(--dark)] rounded-[2.8rem] md:hidden">
+            <input type="radio" name="my-accordion-3" checked="checked" class="" />
+            <div class="collapse-title text-[18px] lg:text-[3.75rem] font-medium">05
+                <span class="ml-[1.5rem] lg:text-[1.8rem]">Reporting and Communication</span>
+            </div>
+            <div class="collapse-content border-t-2 border-black pt-4">
+                <p>During the initial consultation, we will discuss your business goals and objectives, target audience,
+                    and current marketing efforts. This will allow us to understand your needs and tailor our services
+                    to best fit your requirements.</p>
+            </div>
+        </div>
+        <!-- accordion-5 ends -->
+
+        <!-- accordion-6 start -->
+        <div
+            class="collapse collapse-plus bg-[var(--grey)] text-black box-shadow p-[2rem] mb-[1.25rem] border-2 border-[var(--dark)] rounded-[2.8rem] md:hidden">
+            <input type="radio" name="my-accordion-3" checked="checked" class="" />
+            <div class="collapse-title text-[18px] lg:text-[3.75rem] font-medium">06
+                <span class="ml-[1.5rem] lg:text-[1.8rem]">Continual Improvement</span>
+            </div>
+            <div class="collapse-content border-t-2 border-black pt-4">
+                <p>During the initial consultation, we will discuss your business goals and objectives, target audience,
+                    and current marketing efforts. This will allow us to understand your needs and tailor our services
+                    to best fit your requirements.</p>
+            </div>
+        </div>
+        <!-- accordion-6 ends -->
+
+
+    </section>
+
+    <!-- footer mobile starts -->
+    <footer
+        class="footer-mobile bg-[var(--dark)] mt-[4.5rem] pt-[3.125rem] pb-[1.8rem] flex flex-col items-center md:hidden">
+
+        <div class="logo">
+            <img src="desktop/logo-small.png" alt="">
+        </div>
+
+        <ul class="text-white my-[2.25rem] flex flex-col gap-y-4 underline">
+            <li>About us</li>
+            <li>Services</li>
+            <li>Use Cases</li>
+            <li>Pricing</li>
+        </ul>
+
+        <div class="contact-us flex flex-col items-center">
+            <h2 class="bg-[var(--green)] inline-block text-[1.125rem] font-medium p-2 rounded-xl text-black">Contact Us:</h2>
+            <div class="desc text-white mt-[2.25rem] flex flex-col gap-y-4 text-center">
+                <p>Email: info@positivus.com</p>
+                <p>Phone: 555-567-8901</p>
+                <p>Address: 1234 Main St
+                    Moonstone City, Stardust State 12345</p>
+            </div>
+        </div>
+        <div class="subscribe my-[2.25rem] bg-[#292A32] p-[1.8rem] flex flex-col gap-y-4 rounded-xl">
+            <input type="text" placeholder="Email"
+                class="input border-2 border-white w-full max-w-xs rounded-xl bg-[#292A32] placeholder:text-white" />
+            <button class="btn bg-[var(--green)] border-0 rounded-xl max-w-xs text-[1.25rem] text-black">Subscribe to news</button>
+        </div>
+
+        <div class="social-icons flex flex-row gap-x-[1.25rem] border-b-2 border-white pb-[2.25rem]">
+            <div class="icon-1"><img src="desktop/social-linkedin.png" alt=""></div>
+            <div class="icon-2"><img src="desktop/social-fb.png" alt=""></div>
+            <div class="icon-3"><img src="desktop/social-twitter.png" alt=""></div>
+        </div>
+
+        <div class="footer-end text-white mt-[2.25rem]">
+            <p>© 2023 Positivus. All Rights Reserved.</p>
+            <p class="underline">Privacy Policy</p>
+        </div>
+    </footer>
+    <!-- footer mobile ends -->
+
+    <!-- footer desktop starts -->
+    <footer
+        class="footer-desktop bg-[var(--dark)] mt-[4.5rem] pt-[3.125rem] pb-[1.8rem] md:mx-[1.25rem] lg:px-[6.25rem] rounded-t-3xl hidden md:block">
+        <div class="first-part flex flex-row items-center justify-between">
+            <div class="logo">
+                <img src="desktop/logo-small.png" alt="">
+            </div>
+
+            <ul class="text-white my-[2.25rem] flex flex-row gap-x-4 underline">
+                <li>About us</li>
+                <li>Services</li>
+                <li>Use Cases</li>
+                <li>Pricing</li>
+            </ul>
+
+            <div class="social-icons flex flex-row gap-x-[1.25rem]">
+                <div class="icon-1"><img src="desktop/social-linkedin.png" alt=""></div>
+                <div class="icon-2"><img src="desktop/social-fb.png" alt=""></div>
+                <div class="icon-3"><img src="desktop/social-twitter.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="second-part flex flex-row justify-between mt-[4rem] mb-[3rem] border-b-2 border-white">
+            <div class="contact-us">
+                <h2 class="bg-[var(--green)] inline-block text-[1.125rem] font-medium p-2 rounded-xl">Contact Us:</h2>
+                <div class="desc text-white mt-[2.25rem] flex flex-col gap-y-4 ">
+                    <p>Email: info@positivus.com</p>
+                    <p>Phone: 555-567-8901</p>
+                    <p>Address: 1234 Main St
+                        Moonstone City, Stardust State 12345</p>
+                </div>
+            </div>
+
+            <div class="subscribe my-[2.25rem] bg-[#292A32] px-[2.5rem] py-[3.5rem] flex flex-row gap-x-6 rounded-xl">
+                <input type="text" placeholder="Email"
+                    class="input border-2 border-white w-full max-w-xs rounded-xl bg-[#292A32] placeholder:text-white" />
+                <button class="btn bg-[var(--green)] border-0 rounded-xl max-w-xs text-[1.25rem]">Subscribe to
+                    news</button>
+            </div>
+        </div>
+
+       
+        <div class="footer-end text-white mt-[2.25rem] flex flex-row gap-x-4">
+            <p>© 2023 Positivus. All Rights Reserved.</p>
+            <p class="underline">Privacy Policy</p>
+        </div>
+    </footer>
+    <!-- footer desktop ends -->
+
+</body>
+
+</html>
